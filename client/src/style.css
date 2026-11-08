@@ -1,0 +1,144 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Orbitron:wght@400;500;600;700;800&display=swap');
+:root{font-family:'IBM Plex Mono',monospace;color:#d9e8e1;background:#05090b;font-synthesis:none;text-rendering:optimizeLegibility}*{box-sizing:border-box}body{margin:0;min-width:320px;background:#05090b}.app{--accent:#36ff83;--accent2:#0c9c58;--glow:rgba(54,255,131,.13);min-height:100vh;background:radial-gradient(ellipse at 50% -20%,var(--glow),transparent 55%),#05090b;position:relative;overflow:hidden}.theme-cyber{--accent:#c17aff;--accent2:#6b45df;--glow:rgba(162,83,255,.18)}.theme-underground{--accent:#00d7b0;--accent2:#087d70;--glow:rgba(0,215,176,.14)}.scanlines{position:fixed;inset:0;pointer-events:none;opacity:.13;background:repeating-linear-gradient(0deg,transparent 0 3px,rgba(255,255,255,.035) 4px);z-index:0}.topbar{height:82px;border-bottom:1px solid color-mix(in srgb,var(--accent) 24%,transparent);display:flex;align-items:center;justify-content:space-between;padding:0 5.5%;position:relative;z-index:1;background:rgba(4,9,10,.8)}.brand,.top-right,.live,.theme-switch,.panel-head,.panel-actions,.field,.stat-top,.actions,.footer,.welcome-row,.session-chip,.game-visual{display:flex;align-items:center}.brand{gap:13px}.brand-icon{width:42px;height:42px;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;box-shadow:0 0 18px var(--glow)}.brand strong{font:700 17px Orbitron;letter-spacing:1.5px;color:#f0fff6}.brand strong span{color:var(--accent)}.brand small{display:block;font-size:9px;letter-spacing:2px;color:#6c8b7c;margin-top:5px}.top-right{gap:20px}.live{font-size:10px;color:var(--accent);gap:8px;letter-spacing:1px}.live i,.eyebrow span,.status i{width:7px;height:7px;border-radius:50%;background:var(--accent);box-shadow:0 0 9px var(--accent)}.theme-switch{border:1px solid #20332b;padding:4px;gap:3px}.theme-switch button{background:none;border:0;color:#71877c;font:10px 'IBM Plex Mono';padding:8px;cursor:pointer}.theme-switch button.selected{background:var(--glow);color:var(--accent);outline:1px solid color-mix(in srgb,var(--accent) 35%,transparent)}button{font-family:inherit;cursor:pointer}.icon-btn{background:#0b1512;border:1px solid #253b30;color:#9db5a8;width:35px;height:35px;display:grid;place-items:center}.login-wrap{position:relative;z-index:1;max-width:1050px;min-height:calc(100vh - 82px);margin:auto;display:grid;grid-template-columns:1fr 410px;align-items:center;gap:70px;padding:55px 30px}.login-art{height:480px;position:relative;display:grid;place-items:center}.core{width:150px;height:150px;border:1px solid var(--accent);color:var(--accent);display:grid;place-items:center;background:radial-gradient(circle,var(--glow),#08100d 70%);box-shadow:0 0 70px var(--glow),inset 0 0 40px var(--glow);transform:rotate(45deg)}.core svg{transform:rotate(-45deg)}.orbit{position:absolute;border:1px solid color-mix(in srgb,var(--accent) 28%,transparent);border-radius:50%;width:350px;height:350px;transform:rotate(-25deg) scaleY(.42)}.orbit-two{width:460px;height:460px;transform:rotate(50deg) scaleY(.38)}.floating{position:absolute;color:var(--accent);font-size:10px;letter-spacing:2px;border:1px solid color-mix(in srgb,var(--accent) 35%,transparent);background:#07100d;padding:9px 12px}.f1{top:90px;left:7%}.f2{right:2%;top:190px}.f3{bottom:90px;left:22%}.login-panel,.panel,.stat-card{background:linear-gradient(145deg,rgba(13,24,19,.96),rgba(6,12,11,.96));border:1px solid #20372b;box-shadow:0 18px 55px rgba(0,0,0,.25)}.login-panel{padding:36px 34px;border-top:2px solid var(--accent)}.eyebrow{font-size:10px;letter-spacing:2px;color:var(--accent);display:flex;align-items:center;gap:9px}.login-panel h1,.welcome-row h1{font:800 36px Orbitron;line-height:1.2;letter-spacing:1px;margin:18px 0 10px;color:#effff5}.login-panel h1 em{font-style:normal;color:var(--accent)}.muted{font-size:11px;color:#81988c;line-height:1.8}.login-panel label,.modal label{display:block;font-size:10px;letter-spacing:1.5px;color:#9eb6a8;margin:23px 0 8px}.field{height:47px;border:1px solid #294337;background:#050b08;padding:0 13px;gap:10px;color:var(--accent)}.field:focus-within{border-color:var(--accent);box-shadow:0 0 15px var(--glow)}.field input{background:none;border:0;outline:0;color:#e7fff0;width:100%;font:12px 'IBM Plex Mono'}.field input::placeholder{color:#52665b}.reveal{background:none;border:0;color:#769184;padding:3px}.primary-btn{height:46px;padding:0 17px;background:var(--accent);color:#061009;border:0;font-weight:700;font-size:11px;letter-spacing:1px;display:flex;align-items:center;justify-content:center;gap:10px;width:100%;margin-top:24px;box-shadow:0 0 22px var(--glow)}.primary-btn:disabled{opacity:.6}.login-foot{display:flex;align-items:center;gap:8px;font-size:9px;color:var(--accent);margin-top:24px}.login-foot span{margin-left:auto;color:#62796c}.hint{font-size:9px;color:#61766a;line-height:1.7;margin-top:18px}.hint b{color:#b9d4c5}.error{font-size:11px;color:#ff8585;background:#351416;padding:10px;margin-top:12px;border:1px solid #7b3035}.dashboard{position:relative;z-index:1;max-width:1250px;margin:auto;padding:54px 28px 25px}.welcome-row{justify-content:space-between;margin-bottom:30px}.welcome-row h1{font-size:27px;margin:12px 0 5px}.session-chip{border:1px solid #263b30;padding:12px 17px;flex-direction:column;align-items:flex-start;gap:6px;min-width:150px}.session-chip span,.session-chip b{font-size:10px;letter-spacing:1px}.session-chip span{color:#71897a}.session-chip b{color:var(--accent)}.stats-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-bottom:22px}.stat-card{padding:19px 20px;min-height:128px;border-top:1px solid color-mix(in srgb,var(--accent) 45%,transparent)}.stat-top{justify-content:space-between;color:#789184;font-size:9px;letter-spacing:1.2px}.stat-top i{color:var(--accent)}.stat-card strong{display:block;font:700 27px Orbitron;color:var(--accent);margin:13px 0 5px}.stat-card small{font-size:10px;color:#72877b}.panel{padding:23px}.panel-head{justify-content:space-between;gap:18px;margin-bottom:22px}.panel h2,.modal h2{font:600 17px Orbitron;color:#e8fff0;margin:8px 0 0}.panel-actions{gap:9px}.searchbox{height:36px;border:1px solid #294337;display:flex;align-items:center;gap:8px;padding:0 10px;color:#7e9a89}.searchbox input{background:none;border:0;outline:0;color:#eafff0;font:10px 'IBM Plex Mono';width:160px}.compact{width:auto;height:36px;margin:0;font-size:9px}.table-wrap{overflow-x:auto}table{width:100%;border-collapse:collapse;text-align:left;white-space:nowrap}th{font-size:9px;letter-spacing:1px;color:#678173;padding:13px;border-bottom:1px solid #263c30}td{font-size:10px;color:#a3b9ac;padding:15px 13px;border-bottom:1px solid #17291f}td small{display:block;color:#667d70;margin-top:5px;font-size:9px}.user-code{color:#e5fff0}.game-tag{display:inline-flex;align-items:center;gap:7px;color:var(--accent);background:var(--glow);padding:7px 9px}.status{display:inline-flex;align-items:center;gap:7px;font-size:9px}.status.inactive{color:#ff7777}.status.inactive i{background:#ff7777;box-shadow:0 0 8px #ff7777}.actions{gap:7px}.actions button{width:29px;height:29px;background:#101c16;border:1px solid #2a4134;color:#a4c1af;display:grid;place-items:center}.actions button.danger{color:#ff7777}.empty{text-align:center;color:#718779;padding:28px}.table-foot{font-size:9px;letter-spacing:1px;color:#6b8375;padding-top:17px}.table-foot span{float:right}.footer{justify-content:space-between;color:#53695c;font-size:9px;letter-spacing:1px;padding:24px 2px}.global-error,.notice{margin-bottom:14px}.notice{font-size:11px;color:var(--accent);background:var(--glow);border:1px solid color-mix(in srgb,var(--accent) 40%,transparent);padding:10px}.notice button,.global-error button{float:right;background:none;border:0;color:inherit}.user-detail-grid{display:grid;grid-template-columns:1fr 1fr;gap:16px}.profile-card h2{font-size:21px;margin:15px 0 24px}.profile-line{display:flex;justify-content:space-between;gap:15px;padding:14px 0;border-bottom:1px solid #1c3025;font-size:10px}.profile-line span{color:#728b7c}.profile-line b{color:#d9f3e3;text-align:right}.green-text{color:var(--accent)!important}.notes{font-size:10px;color:#90a99a;line-height:1.7}.game-visual{gap:15px;color:var(--accent);padding:23px 0}.game-visual b,.game-visual small{display:block}.game-visual b{font:600 16px Orbitron;color:#eafff0}.game-visual small{font-size:9px;color:#6d8a79;margin-top:7px;letter-spacing:1px}.demo-note{display:inline-block;color:var(--accent);border:1px solid var(--accent);padding:8px 10px;font-size:9px;letter-spacing:1px}.modal-backdrop{position:fixed;inset:0;background:rgba(0,0,0,.78);z-index:5;display:grid;place-items:center;padding:20px}.modal{width:min(480px,100%);max-height:90vh;overflow:auto;background:#08110d;border:1px solid var(--accent);padding:26px;box-shadow:0 0 55px var(--glow)}.modal-head{display:flex;justify-content:space-between;align-items:flex-start;margin-bottom:12px}.plain-input{width:100%;background:#050b08;border:1px solid #294337;color:#e5fff0;padding:12px;font:11px 'IBM Plex Mono';outline:0}.plain-input:focus{border-color:var(--accent)}.plain-input:disabled{opacity:.55}select option{background:#07100c}.modal label{margin:15px 0 7px}
+@media(max-width:850px){.login-wrap{grid-template-columns:1fr;max-width:500px;gap:5px;padding:35px 20px}.login-art{height:230px}.orbit{width:250px;height:250px}.orbit-two{width:320px;height:320px}.core{width:95px;height:95px}.core svg{width:38px}.f1{top:25px}.f2{top:95px}.f3{bottom:20px}.stats-grid{grid-template-columns:repeat(2,1fr)}.panel-head{align-items:flex-start;flex-direction:column}.panel-actions{width:100%;flex-wrap:wrap}.searchbox{flex:1}.searchbox input{width:100%}.user-detail-grid{grid-template-columns:1fr}}
+@media(max-width:560px){.topbar{height:auto;min-height:75px;padding:13px 15px;gap:10px;align-items:flex-start}.brand strong{font-size:13px}.brand small{font-size:7px}.top-right{gap:7px;flex-wrap:wrap;justify-content:flex-end}.live{display:none}.theme-switch button{font-size:8px;padding:7px 5px}.dashboard{padding:35px 14px 15px}.welcome-row{align-items:flex-start;gap:12px;flex-direction:column}.welcome-row h1{font-size:22px}.session-chip{min-width:0}.stats-grid{gap:8px}.stat-card{padding:14px;min-height:112px}.stat-card strong{font-size:22px}.panel{padding:15px}.panel-actions .primary-btn{flex:1}.footer{font-size:7px;gap:10px;align-items:flex-start;flex-direction:column}.login-panel{padding:26px 22px}}
+
+/* Distinct theme identities and member generator */
+.member-generator{margin-bottom:16px;position:relative;overflow:hidden}.member-generator:after{content:"";position:absolute;inset:0;pointer-events:none;opacity:.12;background:repeating-linear-gradient(0deg,transparent 0 5px,var(--accent) 6px 7px)}.member-generator>*{position:relative;z-index:1}.generator-mark{display:flex;align-items:center;gap:10px;color:var(--accent);font-size:9px;letter-spacing:2px}.lookup-row{display:flex;gap:10px;max-width:680px;margin-top:22px}.lookup-input{height:42px;flex:1}.lookup-input input{width:100%;font-size:11px}.member-found{margin-top:20px;padding:15px;border:1px solid color-mix(in srgb,var(--accent) 45%,transparent);background:var(--glow);display:flex;align-items:center;justify-content:space-between;gap:15px}.member-found small,.member-found strong,.member-found span{display:block}.member-found small,.metric-tile small{font-size:9px;letter-spacing:1.5px;color:var(--accent)}.member-found strong{font:700 20px Orbitron;margin:5px 0}.member-found span{font-size:10px;color:#9eb5a7}.generate-btn{width:auto;margin:0;padding:0 18px}.recommendation-grid{display:grid;grid-template-columns:1.4fr repeat(4,1fr);gap:10px;margin-top:12px}.recommended-game,.metric-tile{min-height:130px;border:1px solid color-mix(in srgb,var(--accent) 30%,transparent);background:rgba(0,0,0,.25);padding:16px;color:var(--accent)}.recommended-game h3{font:700 16px Orbitron;color:#f0fff6;margin:13px 0 7px}.recommended-game span,.metric-tile span{display:block;font-size:8px;letter-spacing:1px;color:#789283;margin-top:8px}.metric-tile{display:flex;flex-direction:column;justify-content:center}.metric-tile strong{font:700 25px Orbitron;color:#f0fff6;margin-top:13px}.metric-tile strong i{font:10px 'IBM Plex Mono';color:var(--accent)}.recommendation-foot{grid-column:1/-1;text-align:right;color:#728c7c;font-size:8px;letter-spacing:1px;padding:5px}.theme-cyber .topbar{background:linear-gradient(100deg,#100a20,#17102b 55%,#091b2b);border-bottom:1px solid #6b39a8}.theme-cyber .brand-icon{border-color:#b66cff;background:linear-gradient(135deg,#30134a,#102d4b);box-shadow:0 0 25px #8e3bd455}.theme-cyber .panel{background:linear-gradient(145deg,rgba(30,15,48,.96),rgba(8,19,35,.96));border-radius:16px;box-shadow:0 18px 50px #0008,inset 0 1px #b66cff33}.theme-cyber .stat-card{border-radius:15px;background:linear-gradient(145deg,#211234,#101b31);border-color:#553477}.theme-cyber .login-panel{border-radius:22px;background:linear-gradient(145deg,#1a1030,#0b1928);border-color:#9b55dc}.theme-cyber .member-generator:after{background:radial-gradient(circle at 90% 10%,#b66cff55,transparent 38%),linear-gradient(120deg,transparent,#26c9ff12,transparent)}.theme-underground .topbar{background:#101512;border-bottom:3px solid #9b7430}.theme-underground .brand-icon{border-color:#a98742;background:#252116;box-shadow:inset 0 0 15px #b48a3044}.theme-underground .panel{background:repeating-linear-gradient(135deg,#151914,#151914 12px,#181d16 12px,#181d16 24px);border:1px solid #756039;border-radius:3px;box-shadow:inset 0 0 35px #0009}.theme-underground .stat-card{background:#1c2019;border:1px solid #756039;border-left:4px solid var(--accent);border-radius:2px}.theme-underground .login-panel{background:#171b15;border:1px solid #9b7430;border-radius:3px}.theme-underground .member-generator:after{opacity:.08;background:repeating-linear-gradient(90deg,transparent 0 28px,#c69a4433 29px 30px)}
+@media(max-width:950px){.recommendation-grid{grid-template-columns:repeat(2,1fr)}.recommended-game{grid-column:1/-1}}@media(max-width:560px){.lookup-row,.member-found{flex-direction:column;align-items:stretch}.lookup-row .primary-btn,.generate-btn{width:100%}.recommendation-grid{grid-template-columns:1fr 1fr}.recommended-game{grid-column:1/-1}.member-found{gap:12px}}
+
+/* Accurate per-game cover sizing and long labels */
+.recommended-game .game-cover-large{object-fit:contain;background:#07120f}
+.stats-grid .stat-card:nth-child(3) strong{font-size:clamp(13px,1.4vw,20px);line-height:1.35;overflow-wrap:anywhere}
+
+/* MAHKOTABOS final dashboard refinements */
+.brand-kicker{font:700 12px Orbitron,sans-serif;letter-spacing:3px;color:var(--accent);margin-top:12px}
+.stats-grid .stat-card strong{overflow-wrap:anywhere}
+.stats-grid .stat-card:nth-child(2) strong{font-size:clamp(17px,2vw,25px);letter-spacing:-.5px}
+.stats-grid .stat-card:nth-child(3) strong{font-size:clamp(13px,1.4vw,20px);line-height:1.35}
+
+/* Admin referral selector */
+.referral-session select{width:100%;min-width:190px;background:#07100c;border:1px solid var(--accent);color:var(--accent);padding:9px 28px 9px 10px;font:700 10px 'IBM Plex Mono';letter-spacing:1px;outline:0;cursor:pointer}
+.referral-session select:focus{box-shadow:0 0 14px var(--glow)}
+.referral-session select option{background:#07100c;color:#d9e8e1}
+@media(max-width:560px){.referral-session{width:100%}.referral-session select{min-width:0}}
+
+
+/* Game catalogue: additive styles only; existing dashboard styles remain unchanged. */
+.catalog-panel{margin-top:22px;padding:22px;}
+.catalog-count{display:flex;flex-direction:column;align-items:flex-end;color:var(--accent,#36ff83);font-family:inherit;}
+.catalog-count strong{font-size:26px;line-height:1.1}.catalog-count small{font-size:9px;letter-spacing:1.5px;color:#789387;margin-top:5px}
+.catalog-tools{display:grid;grid-template-columns:minmax(220px,1fr) minmax(180px,260px);gap:12px;margin:18px 0}
+.catalog-select{background:#07100d;border:1px solid rgba(54,255,131,.28);color:var(--accent,#36ff83);padding:12px;font:inherit;outline:none}
+.catalog-provider-list{display:flex;flex-wrap:wrap;gap:7px;margin:14px 0 18px;align-items:center}
+.catalog-provider-list>span{font-size:9px;letter-spacing:1.4px;color:#789387;margin-right:8px}
+.catalog-provider-list button{background:transparent;border:1px solid rgba(54,255,131,.2);color:#9bb4a7;padding:6px 9px;font:inherit;font-size:9px;cursor:pointer}
+.catalog-provider-list button.active,.catalog-provider-list button:hover{border-color:var(--accent,#36ff83);color:var(--accent,#36ff83);background:rgba(54,255,131,.07)}
+.catalog-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;max-height:460px;overflow:auto;padding-right:4px}
+.catalog-game{display:flex;align-items:center;gap:10px;min-width:0;padding:11px;border:1px solid rgba(54,255,131,.18);background:rgba(3,12,9,.45);color:var(--accent,#36ff83)}
+.catalog-game>div{display:flex;flex-direction:column;min-width:0;gap:4px}.catalog-game b{font-size:12px;color:#e5f4ec;overflow-wrap:anywhere}.catalog-game small{font-size:9px;letter-spacing:1px;color:#829b8e}
+.catalog-empty{grid-column:1/-1;padding:20px;color:#829b8e;font-size:12px}.catalog-disclaimer{margin-top:14px;padding-top:12px;border-top:1px solid rgba(54,255,131,.15);font-size:9px;letter-spacing:1px;color:#789387}
+@media(max-width:800px){.catalog-grid{grid-template-columns:repeat(2,minmax(0,1fr))}.catalog-tools{grid-template-columns:1fr}}
+@media(max-width:520px){.catalog-grid{grid-template-columns:1fr}.catalog-panel{padding:14px}}
+
+/* Manual total deposit field: keeps the existing statistic card layout */
+.deposit-stat .deposit-input-wrap{display:flex;align-items:center;gap:5px;margin:13px 0 5px;color:var(--accent);font:700 27px Orbitron,sans-serif;min-width:0}
+.deposit-stat .deposit-input-wrap input{width:100%;min-width:0;background:transparent;border:0;border-bottom:1px solid color-mix(in srgb,var(--accent) 45%,transparent);outline:0;color:var(--accent);font:700 24px Orbitron,sans-serif;padding:2px 0 5px}
+.deposit-stat .deposit-input-wrap input::placeholder{color:#60766a;font:10px 'IBM Plex Mono',monospace;letter-spacing:.5px}
+.deposit-stat .deposit-input-wrap input:focus{border-bottom-color:var(--accent)}
+@media(max-width:560px){.deposit-stat .deposit-input-wrap{font-size:21px}.deposit-stat .deposit-input-wrap input{font-size:19px}}
+
+
+/* CYBERCORE responsive mobile refinement */
+html, body, #root { width: 100%; min-height: 100%; }
+body { overflow-x: hidden; }
+.app { width: 100%; overflow-x: clip; }
+img, svg { max-width: 100%; }
+
+@media (max-width: 850px) {
+  .dashboard { width: 100%; }
+  .recommendation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .recommended-game { grid-column: 1 / -1; }
+  .catalog-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .panel-head { min-width: 0; }
+  .panel-actions { min-width: 0; }
+  .panel-actions > * { max-width: 100%; }
+  .table-wrap { width: 100%; max-width: 100%; overflow-x: auto; -webkit-overflow-scrolling: touch; }
+  table { min-width: 680px; }
+}
+
+@media (max-width: 560px) {
+  .topbar {
+    width: 100%;
+    flex-direction: column;
+    align-items: stretch;
+    gap: 12px;
+    padding: 12px 14px;
+  }
+  .brand { min-width: 0; }
+  .top-right {
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+  }
+  .theme-switch { max-width: 100%; }
+  .theme-switch button { padding: 8px 6px; font-size: 8px; }
+  .dashboard { padding: 25px 12px 14px; }
+  .welcome-row { width: 100%; }
+  .welcome-row > div:first-child { min-width: 0; width: 100%; }
+  .welcome-row h1 { font-size: clamp(18px, 6vw, 23px); overflow-wrap: anywhere; }
+  .session-chip { width: 100%; }
+  .referral-session select { width: 100%; }
+  .stats-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px; }
+  .stat-card { min-width: 0; padding: 12px 10px; min-height: 108px; }
+  .stat-card strong { font-size: clamp(16px, 5vw, 22px); overflow-wrap: anywhere; }
+  .stat-top { gap: 6px; font-size: 8px; }
+  .panel { min-width: 0; padding: 13px; }
+  .panel h2 { font-size: 14px; line-height: 1.4; overflow-wrap: anywhere; }
+  .panel-head { gap: 12px; }
+  .panel-actions { display: grid; grid-template-columns: minmax(0, 1fr) auto; }
+  .panel-actions .searchbox { grid-column: 1 / -1; width: 100%; }
+  .panel-actions .searchbox input { min-width: 0; width: 100%; }
+  .lookup-row { width: 100%; }
+  .lookup-input { width: 100%; min-width: 0; }
+  .member-found { width: 100%; }
+  .member-found strong { font-size: 17px; overflow-wrap: anywhere; }
+  .recommendation-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 7px; }
+  .recommended-game { grid-column: 1 / -1; }
+  .metric-tile { min-width: 0; padding: 12px 9px; min-height: 112px; }
+  .metric-tile strong { font-size: clamp(17px, 5vw, 23px); overflow-wrap: anywhere; }
+  .catalog-panel { padding: 13px; }
+  .catalog-tools { grid-template-columns: minmax(0, 1fr); }
+  .catalog-tools .searchbox { min-width: 0; width: 100%; }
+  .catalog-tools .searchbox input { width: 100%; min-width: 0; }
+  .catalog-grid { grid-template-columns: minmax(0, 1fr); }
+  .catalog-provider-list { gap: 6px; }
+  .catalog-provider-list button { font-size: 8px; padding: 7px; }
+  .catalog-disclaimer { line-height: 1.7; overflow-wrap: anywhere; }
+  .user-detail-grid { grid-template-columns: minmax(0, 1fr); }
+  .profile-line { flex-wrap: wrap; }
+  .profile-line b { overflow-wrap: anywhere; }
+  .footer { line-height: 1.7; overflow-wrap: anywhere; }
+  .login-wrap { width: 100%; padding: 22px 14px 28px; gap: 0; }
+  .login-art { height: 175px; overflow: hidden; }
+  .orbit { width: 205px; height: 205px; }
+  .orbit-two { width: 260px; height: 260px; }
+  .core { width: 78px; height: 78px; }
+  .core svg { width: 32px; }
+  .floating { font-size: 7px; letter-spacing: 1px; padding: 7px 8px; }
+  .f1 { top: 10px; left: 1%; }
+  .f2 { top: 75px; right: 0; }
+  .f3 { bottom: 8px; left: 12%; }
+  .login-panel { width: 100%; padding: 23px 18px; }
+  .login-panel h1 { font-size: clamp(27px, 9vw, 34px); }
+  .modal-backdrop { padding: 10px; }
+  .modal { max-height: 94dvh; padding: 18px; }
+}
+
+@media (max-width: 360px) {
+  .stats-grid, .recommendation-grid { grid-template-columns: minmax(0, 1fr); }
+  .recommended-game { grid-column: auto; }
+  .theme-switch button { padding: 7px 4px; font-size: 7px; }
+  .login-foot { flex-wrap: wrap; font-size: 8px; }
+}
